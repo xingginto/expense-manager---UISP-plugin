@@ -1,0 +1,61 @@
+{
+    "version": "1",
+    "information": {
+        "name": "expense-manager",
+        "displayName": "Expense Manager",
+        "description": "A plugin for managing expenses with CRUD operations and CSV export functionality",
+        "url": "https://github.com/your-username/uisp-expense-plugin",
+        "version": "1.0.0",
+        "unmsVersionCompliancy": {
+            "min": "1.0.0",
+            "max": null
+        },
+        "author": "UISP Plugin Developer"
+    },
+    "configuration": [
+        {
+            "key": "expenses_per_page",
+            "label": "Expenses per page",
+            "type": "text",
+            "default": "25",
+            "description": "Number of expenses to display per page"
+        },
+        {
+            "key": "payment_method",
+            "label": "Default Payment Method",
+            "type": "choice",
+            "choices": [
+                {"value": "Cash", "label": "Cash"},
+                {"value": "Gcash", "label": "Gcash"},
+                {"value": "Xend-it", "label": "Xend-it"},
+                {"value": "Paymaya", "label": "Paymaya"},
+                {"value": "Bank", "label": "Bank"},
+                {"value": "Others", "label": "Others"}
+            ],
+            "default": "Cash",
+            "description": "Default payment method for expenses"
+        },
+        {
+            "key": "date_format",
+            "label": "Date format",
+            "type": "text",
+            "default": "Y-m-d",
+            "description": "Date format for expense entries"
+        },
+        {
+            "key": "unms_api_token",
+            "label": "UNMS API token",
+            "type": "text",
+            "required": false,
+            "description": "API token created for this plugin in Network section of UNMS"
+        }
+    ],
+    "menu": [
+        {
+            "type": "admin",
+            "target": "iframe",
+            "key": "System",
+            "label": "Expense Manager"
+        }
+    ]
+}
