@@ -4,7 +4,7 @@
         "name": "expense-manager",
         "displayName": "Expense Manager",
         "description": "A plugin for managing expenses with CRUD operations and CSV export functionality",
-        "url": "https://github.com/your-username/uisp-expense-plugin",
+        "url": "https://github.com/xingginto/",
         "version": "1.0.0",
         "unmsVersionCompliancy": {
             "min": "1.0.0",
