@@ -119,6 +119,10 @@ The plugin provides RESTful API endpoints accessible through the main.php file:
 
 For issues, feature requests, or contributions, please visit the plugin repository or contact the plugin author.
 
+## Author
+
+**xingginto**
+
 ## License
 
 This plugin is released under the MIT License.
